@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import {
   View,
   TouchableWithoutFeedback,
-  ViewPropTypes,
   PanResponder,
   StyleSheet,
 } from 'react-native';
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 import { LinearGradient } from 'expo-linear-gradient';
 import PropTypes from 'prop-types';
 import chroma from 'chroma-js';
@@ -121,8 +121,8 @@ export default class SaturationValuePicker extends Component {
               '#fff',
               chroma.hsl(hue, 1, 0.5).hex(),
             ]}
-            start={[0, 0.5]}
-            end={[1, 0.5]}
+            start={{ x: 0, y: 0.5 }}
+            end={{ x: 1, y: 0.5 }}
           >
             <LinearGradient
               colors={[
