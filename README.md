@@ -1,4 +1,4 @@
-# react-native-hsv-color-picker
+# `@codexporer.io/react-native-hsv-color-picker`
 
 > A React Native HSV (Hue, Saturation, Value) color picker component written in TypeScript with dynamic theming support.
 
@@ -12,9 +12,8 @@ Fork of [react-native-hsv-color-picker](https://github.com/yuanfux/react-native-
 
 ## Installation & Peer Dependencies
 
-Ensure your project has the required peer dependencies installed:
-
 ```bash
+yarn add @codexporer.io/react-native-hsv-color-picker
 yarn add chroma-js expo-linear-gradient
 yarn add -D @types/chroma-js
 ```
@@ -34,7 +33,7 @@ Peer dependencies:
 ```tsx
 import React, { useState, useRef } from 'react';
 import { View, StyleSheet } from 'react-native';
-import HsvColorPicker, { HsvColorPickerRef } from 'react-native-hsv-color-picker';
+import HsvColorPicker, { HsvColorPickerRef } from '@codexporer.io/react-native-hsv-color-picker';
 
 export const ColorPickerExample = () => {
   const [hue, setHue] = useState(0);
