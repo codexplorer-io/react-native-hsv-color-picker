@@ -33,7 +33,9 @@ Peer dependencies:
 ```tsx
 import React, { useState, useRef } from 'react';
 import { View, StyleSheet } from 'react-native';
-import HsvColorPicker, { HsvColorPickerRef } from '@codexporer.io/react-native-hsv-color-picker';
+import HsvColorPicker from '@codexporer.io/react-native-hsv-color-picker';
+
+type HsvColorPickerRef = React.ElementRef<typeof HsvColorPicker>;
 
 export const ColorPickerExample = () => {
   const [hue, setHue] = useState(0);
@@ -141,15 +143,20 @@ The component integrates with `@codexporer.io/expo-app-theme`. When wrapped in a
 
 ---
 
-### Ref Methods (`HsvColorPickerRef`)
+### Ref Methods (`React.ElementRef<typeof HsvColorPicker>`)
 
 | Method | Return Type | Description |
 | :--- | :--- | :--- |
 | `getCurrentColor()` | `string` | Returns the current color formatted as a hex string (e.g. `#ff007f`) |
 
 ```tsx
+type HsvColorPickerRef = React.ElementRef<typeof HsvColorPicker>;
 const pickerRef = useRef<HsvColorPickerRef>(null);
 
 // Get current hex color programmatically
 const currentHex = pickerRef.current?.getCurrentColor();
 ```
+
+## License
+
+MIT
