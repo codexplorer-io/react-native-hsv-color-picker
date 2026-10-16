@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "peerDependencies": {
-    "chroma-js": "^2.1.0",
-    "@types/chroma-js": "*",
-    "expo-linear-gradient": "*",
     "react": "*",
     "react-native": "*",
+    "chroma-js": "*",
+    "expo-linear-gradient": "*",
     "@codexporer.io/expo-app-theme": "*"
   }
 }

@@ -14,15 +14,12 @@ Fork of [react-native-hsv-color-picker](https://github.com/yuanfux/react-native-
 
 ```bash
 yarn add @codexporer.io/react-native-hsv-color-picker
-yarn add chroma-js expo-linear-gradient
-yarn add -D @types/chroma-js
 ```
 
 Peer dependencies:
 - `react` (`*`)
 - `react-native` (`*`)
-- `chroma-js` (`^2.1.0`)
-- `@types/chroma-js` (`*`)
+- `chroma-js` (`*`)
 - `expo-linear-gradient` (`*`)
 - `@codexporer.io/expo-app-theme` (`*`)
 
